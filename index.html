@@ -1,1158 +1,1737 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<body>
-    <p>&#65279;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashith Jain â€” Fullstack Web Developer</title>
+    <meta name="description" content="Ashith Jain â€” Passionate Fullstack Web Developer. Portfolio showcasing projects, skills, and certifications in web development, React, JavaScript, and Python.">
+    <meta name="keywords" content="Ashith Jain, Web Developer, Fullstack Developer, Portfolio, React, JavaScript, Python">
+    <meta name="author" content="Ashith Jain">
 
-    </p>
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ashith Jain â€” Fullstack Web Developer">
+    <meta property="og:description" content="Portfolio showcasing projects, skills, and certifications.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ashithjain.github.io">
 
-    <title>Ashith jain Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Ashith N Portfolio/Personal Resume">
-    <meta name="keywords" content="Ashith N Portfolio/Personal Resume">
-    <meta name="author" content="ashithjain.github.io">
-
-    <link rel="stylesheet" media="screen" href="css_url.css" type="text/css">
-
-
-
+    <!-- Favicon -->
     <link rel="icon" href="img/icons/favicon.ico" sizes="16x16">
     <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#hero" class="nav-logo">AJ<span>.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="scrollto active">Home</a></li>
+                <li><a href="#about" class="scrollto">About</a></li>
+                <li><a href="#skills" class="scrollto">Skills</a></li>
+                <li><a href="#projects" class="scrollto">Projects</a></li>
+                <li><a href="#certificates" class="scrollto">Certificates</a></li>
+                <li><a href="#contact" class="scrollto">Contact</a></li>
+            </ul>
+            <div style="display: flex; align-items: center;">
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle light/dark theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-bg-image" style="background-image: url('img/hero-bg.jpg');"></div>
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-avatar reveal">
+                <img src="img/profile.jpg" alt="Ashith Jain">
+            </div>
+            <h1 class="hero-title reveal reveal-delay-1">Ashith Jain</h1>
+            <p class="hero-subtitle reveal reveal-delay-2">Fullstack Web Developer</p>
+            <div class="hero-typed reveal reveal-delay-3" id="typed-output">
+                <span id="typed-text"></span><span class="cursor">|</span>
+            </div>
+            <div class="hero-socials reveal reveal-delay-4">
+                <a href="https://github.com/ashithjain" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/ashith-jain/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:ashithjain97@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about" class="scrollto">
+                <div class="scroll-indicator"></div>
+                <span>Scroll</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <h3>Hi, I'm Ashith Jain ðŸ‘‹</h3>
+                    <p>
+                        I'm a passionate Fullstack Web Developer who loves to design and build rich, 
+                        optimized web applications. With a strong foundation in Computer Science and a 
+                        keen eye for modern UI/UX design, I create digital experiences that are both 
+                        beautiful and functional.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <span class="label">Phone</span>
+                            <span class="value">+91 8217577406</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Email</span>
+                            <span class="value"><a href="mailto:ashithjain97@gmail.com">ashithjain97@gmail.com</a></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Website</span>
+                            <span class="value"><a href="https://ashithjain.github.io">ashithjain.github.io</a></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Location</span>
+                            <span class="value">Bangalore, Karnataka, India</span>
+                        </div>
+                    </div>
+                    <a href="resume.pdf" class="btn-primary" target="_blank">
+                        <i class="fas fa-eye"></i> View Resume
+                    </a>
+
+                    <div class="hobbies-grid">
+                        <span class="hobby-tag"><i class="fas fa-gamepad"></i> Gaming</span>
+                        <span class="hobby-tag"><i class="fas fa-headphones"></i> Music</span>
+                        <span class="hobby-tag"><i class="fas fa-plane"></i> Travel</span>
+                        <span class="hobby-tag"><i class="fas fa-laptop-code"></i> Coding</span>
+                        <span class="hobby-tag"><i class="fas fa-film"></i> Cinema</span>
+                        <span class="hobby-tag"><i class="fas fa-microchip"></i> Gadgets</span>
+                        <span class="hobby-tag"><i class="fas fa-globe"></i> Browsing</span>
+                        <span class="hobby-tag"><i class="fas fa-rocket"></i> Technology</span>
+                    </div>
+                </div>
+                <div class="education-cards reveal reveal-delay-2">
+                    <div class="edu-card">
+                        <div class="edu-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>B.E Computer Science & Engineering</h4>
+                        <p class="edu-school">Visvesvaraya Technological University, B.C.E College</p>
+                        <p class="edu-year"><i class="far fa-calendar-alt"></i> 2015 â€” 2020</p>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <h4>Pre University â€” Science (P.C.M.B)</h4>
+                        <p class="edu-school">S.D.M College, Ujire</p>
+                        <p class="edu-year"><i class="far fa-calendar-alt"></i> 2013 â€” 2015</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">What I work with</span>
+                <h2 class="section-title">Technologies & Skills</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Programming Languages -->
+            <div class="skills-category reveal">
+                <h3>Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="devicon-python-plain colored"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-typescript-plain colored"></i>
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-java-plain colored"></i>
+                        <span>Java</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frontend -->
+            <div class="skills-category reveal reveal-delay-1">
+                <h3>Frontend Technologies</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="devicon-html5-plain colored"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-css3-plain colored"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-react-original colored"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-nextjs-plain"></i>
+                        <span>Next.js</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-bootstrap-plain colored"></i>
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-jquery-plain colored"></i>
+                        <span>jQuery</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend & Tools -->
+            <div class="skills-category reveal reveal-delay-2">
+                <h3>Backend & Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="devicon-nodejs-plain colored"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-mysql-plain colored"></i>
+                        <span>SQL</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-git-plain colored"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-github-original"></i>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-cloud"></i>
+                        <span>REST API</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-server"></i>
+                        <span>Web Hosting</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="project-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="react">React</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+
+                <!-- Computer Accessories Website -->
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ashithjain/computer-accessories-website" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://ashithjain.github.io/computer-accessories-website" target="_blank" rel="noopener noreferrer" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Computer Accessories Website</h3>
+                        <p>A responsive e-commerce website showcasing computer accessories with modern UI design and product catalog features.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expense Tracker -->
+                <div class="project-card reveal reveal-delay-1" data-category="react">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ashithjain/Expense-traker" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Expense Tracker</h3>
+                        <p>A full-featured expense tracking application built with JavaScript. Track income, expenses, and view transaction history with visual reports.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- React CRUD -->
+                <div class="project-card reveal reveal-delay-2" data-category="react">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ashithjain/react_CRUD" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>React CRUD Application</h3>
+                        <p>A React-based CRUD (Create, Read, Update, Delete) application demonstrating state management and component-based architecture.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking Table -->
+                <div class="project-card reveal" data-category="react">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ashithjain/Booking_table" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Booking Table</h3>
+                        <p>A table booking and reservation system built with JavaScript. Manage reservations, view availability, and handle customer bookings.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LogusIMS -->
+                <div class="project-card reveal reveal-delay-1" data-category="web">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-boxes-stacked"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ashithjain/LogusIMS" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Logus IMS</h3>
+                        <p>An Inventory Management System website for tracking products, stock levels, and managing business inventory with an intuitive dashboard.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-Commerce Website -->
+                <div class="project-card reveal reveal-delay-2" data-category="web">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ashithjain/E-commerce_website" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>E-Commerce Website</h3>
+                        <p>A full-featured e-commerce platform with product browsing, shopping cart functionality, and checkout flow with responsive design.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio -->
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ashithjain/ashithjain.github.io" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://ashithjain.github.io" target="_blank" rel="noopener noreferrer" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Personal Portfolio</h3>
+                        <p>This portfolio website â€” a modern, dark-themed showcase of skills, projects, and certifications built with vanilla HTML, CSS, and JavaScript.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificates" id="certificates">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Continuous Learning</span>
+                <h2 class="section-title">Certifications</h2>
+                <div class="section-line"></div>
+            </div>
+
+                        <!-- Specializations Accordion Showcase -->
+            <div class="specializations-showcase reveal">
+                <h3 style="text-align: center; margin-bottom: 24px; color: var(--text-secondary); font-weight: 500;">Specializations & Professional Programs</h3>
+                <div class="spec-grid">
+                    
+                    <!-- Spec 1: Meta -->
+                    <div class="spec-card">
+                        <span class="spec-badge">Professional Certificate</span>
+                        <h3>Meta Front-End Developer</h3>
+                        <div class="spec-provider">
+                            <span class="spec-provider-logo"><i class="fab fa-meta"></i></span>
+                            <span class="spec-provider-name">Meta</span>
+                        </div>
+                        <div class="spec-footer">
+                            <a href="https://coursera.org/verify/professional-cert/3XPP5WDDVKBD" class="spec-cert-link" target="_blank" rel="noopener noreferrer">
+                                Verify Program <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <button class="btn-toggle-courses" data-target="meta-courses">
+                                Courses (9) <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="spec-courses-list" id="meta-courses">
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">1. Introduction to Front-End Development</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera C2EWQUT4U235.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/C2EWQUT4U235" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">2. Programming with JavaScript</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera X3PWSLJL4ZY5.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/X3PWSLJL4ZY5" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">3. Version Control</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera KX8X7RYQWCUS.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/KX8X7RYQWCUS" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">4. HTML and CSS in depth</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera C8DPRB4MHR6V.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/C8DPRB4MHR6V" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">5. React Basics</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera KTA86PLW4G4S.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/KTA86PLW4G4S" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">6. Advanced React</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera FJA6U93UX4WG.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/FJA6U93UX4WG" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">7. Principles of UX/UI Design</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera PZE7UDWTJUYJ.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/PZE7UDWTJUYJ" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">8. Front-End Developer Capstone</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera BW5VPNLXT2SE.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/BW5VPNLXT2SE" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">9. Coding Interview Preparation</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera U7W8R42GVURB.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/U7W8R42GVURB" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Spec 2: U of Michigan -->
+                    <div class="spec-card">
+                        <span class="spec-badge">Specialization</span>
+                        <h3>Web Design for Everybody</h3>
+                        <div class="spec-provider">
+                            <span class="spec-provider-logo"><i class="fas fa-university"></i></span>
+                            <span class="spec-provider-name">University of Michigan</span>
+                        </div>
+                        <div class="spec-footer">
+                            <a href="https://coursera.org/verify/specialization/3PPJT6AKD683" class="spec-cert-link" target="_blank" rel="noopener noreferrer">
+                                Verify Program <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <button class="btn-toggle-courses" data-target="michigan-courses">
+                                Courses (5) <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="spec-courses-list" id="michigan-courses">
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">1. Introduction to HTML5</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera 42YDK4C7SDRY.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/42YDK4C7SDRY" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">2. Introduction to CSS3</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera VP4CB2ZLPHB5.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/VP4CB2ZLPHB5" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">3. Interactivity with JavaScript</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera P5KSKTB78ZC5.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/P5KSKTB78ZC5" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">4. Advanced Styling with Responsive Design</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera 86VDZHYZXK2V.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/86VDZHYZXK2V" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">5. Web Design for Everybody Capstone</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera 573VKHS26CNW.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/573VKHS26CNW" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Spec 3: AWS -->
+                    <div class="spec-card">
+                        <span class="spec-badge">Specialization</span>
+                        <h3>AWS Fundamentals</h3>
+                        <div class="spec-provider">
+                            <span class="spec-provider-logo"><i class="fab fa-aws"></i></span>
+                            <span class="spec-provider-name">Amazon Web Services</span>
+                        </div>
+                        <div class="spec-footer">
+                            <a href="https://coursera.org/verify/specialization/AEJ34KOYO6PR" class="spec-cert-link" target="_blank" rel="noopener noreferrer">
+                                Verify Program <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <button class="btn-toggle-courses" data-target="aws-courses">
+                                Courses (3) <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="spec-courses-list" id="aws-courses">
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">1. AWS Cloud Technical Essentials</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera HRNU1C5DPLCD.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/HRNU1C5DPLCD" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">2. Architecting Solutions on AWS</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera KJTBZWTUHOO9.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/KJTBZWTUHOO9" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">3. Migrating to the AWS Cloud</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera VLWTFOSWBY4C.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/VLWTFOSWBY4C" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Provider Filter Tabs -->
+            <div class="project-filters reveal" style="margin-top: 56px; margin-bottom: 32px;">
+                <h3 style="width: 100%; text-align: center; margin-bottom: 20px; color: var(--text-secondary); font-weight: 500;">All Individual Certificates</h3>
+                <button class="filter-btn active" data-cert-filter="all">All (30)</button>
+                <button class="filter-btn" data-cert-filter="meta">Meta (10)</button>
+                <button class="filter-btn" data-cert-filter="michigan">University of Michigan (6)</button>
+                <button class="filter-btn" data-cert-filter="scrimba">Scrimba (9)</button>
+                <button class="filter-btn" data-cert-filter="aws">AWS (4)</button>
+                <button class="filter-btn" data-cert-filter="ibm">IBM (1)</button>
+            </div>
+
+            <!-- Certificates Grid -->
+            <div class="certificates-grid" id="certsGrid">
+                <!-- Certificate card for Web Design for Everybody: Basics of Web Development & Coding -->
+                <div class="cert-card reveal" data-provider="michigan">
+                    <div class="cert-card-top">
+                        <div class="cert-logo michigan">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <span class="cert-issuer">U of Michigan - Coursera</span>
+                    </div>
+                    <h3>Web Design for Everybody: Basics of Web Development & Coding</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/specialization/3PPJT6AKD683" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera 3PPJT6AKD683.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Meta Front-End Developer -->
+                <div class="cert-card reveal" data-provider="meta">
+                    <div class="cert-card-top">
+                        <div class="cert-logo meta">
+                            <i class="fab fa-meta"></i>
+                        </div>
+                        <span class="cert-issuer">Meta - Coursera</span>
+                    </div>
+                    <h3>Meta Front-End Developer</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/professional-cert/3XPP5WDDVKBD" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera 3XPP5WDDVKBD.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Introduction to HTML5 -->
+                <div class="cert-card reveal" data-provider="michigan">
+                    <div class="cert-card-top">
+                        <div class="cert-logo michigan">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <span class="cert-issuer">U of Michigan - Coursera</span>
+                    </div>
+                    <h3>Introduction to HTML5</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/42YDK4C7SDRY" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera 42YDK4C7SDRY.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Introduction to Agile Development and Scrum -->
+                <div class="cert-card reveal" data-provider="ibm">
+                    <div class="cert-card-top">
+                        <div class="cert-logo ibm">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <span class="cert-issuer">IBM - Coursera</span>
+                    </div>
+                    <h3>Introduction to Agile Development and Scrum</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/51SELCEZNYUQ" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera 51SELCEZNYUQ.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Web Design for Everybody Capstone -->
+                <div class="cert-card reveal" data-provider="michigan">
+                    <div class="cert-card-top">
+                        <div class="cert-logo michigan">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <span class="cert-issuer">U of Michigan - Coursera</span>
+                    </div>
+                    <h3>Web Design for Everybody Capstone</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/573VKHS26CNW" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera 573VKHS26CNW.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for React Interview Questions -->
+                <div class="cert-card reveal" data-provider="scrimba">
+                    <div class="cert-card-top">
+                        <div class="cert-logo scrimba">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="cert-issuer">Scrimba</span>
+                    </div>
+                    <h3>React Interview Questions</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/595HDKF369YQ" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera 595HDKF369YQ.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Learn HTML and CSS -->
+                <div class="cert-card reveal" data-provider="scrimba">
+                    <div class="cert-card-top">
+                        <div class="cert-logo scrimba">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="cert-issuer">Scrimba</span>
+                    </div>
+                    <h3>Learn HTML and CSS</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/6R7X8N7PFTRA" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera 6R7X8N7PFTRA.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Advanced Styling with Responsive Design -->
+                <div class="cert-card reveal" data-provider="michigan">
+                    <div class="cert-card-top">
+                        <div class="cert-logo michigan">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <span class="cert-issuer">U of Michigan - Coursera</span>
+                    </div>
+                    <h3>Advanced Styling with Responsive Design</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/86VDZHYZXK2V" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera 86VDZHYZXK2V.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for AWS Fundamentals -->
+                <div class="cert-card reveal" data-provider="aws">
+                    <div class="cert-card-top">
+                        <div class="cert-logo aws">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <span class="cert-issuer">AWS - Coursera</span>
+                    </div>
+                    <h3>AWS Fundamentals</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/specialization/AEJ34KOYO6PR" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera AEJ34KOYO6PR.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Front-End Developer Capstone  -->
+                <div class="cert-card reveal" data-provider="meta">
+                    <div class="cert-card-top">
+                        <div class="cert-logo meta">
+                            <i class="fab fa-meta"></i>
+                        </div>
+                        <span class="cert-issuer">Meta - Coursera</span>
+                    </div>
+                    <h3>Front-End Developer Capstone </h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/BW5VPNLXT2SE" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera BW5VPNLXT2SE.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Introduction to Front-End Development -->
+                <div class="cert-card reveal" data-provider="meta">
+                    <div class="cert-card-top">
+                        <div class="cert-logo meta">
+                            <i class="fab fa-meta"></i>
+                        </div>
+                        <span class="cert-issuer">Meta - Coursera</span>
+                    </div>
+                    <h3>Introduction to Front-End Development</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/C2EWQUT4U235" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera C2EWQUT4U235.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for HTML and CSS in depth -->
+                <div class="cert-card reveal" data-provider="meta">
+                    <div class="cert-card-top">
+                        <div class="cert-logo meta">
+                            <i class="fab fa-meta"></i>
+                        </div>
+                        <span class="cert-issuer">Meta - Coursera</span>
+                    </div>
+                    <h3>HTML and CSS in depth</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/C8DPRB4MHR6V" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera C8DPRB4MHR6V.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for React Technical Interview Practice Questions -->
+                <div class="cert-card reveal" data-provider="scrimba">
+                    <div class="cert-card-top">
+                        <div class="cert-logo scrimba">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="cert-issuer">Scrimba</span>
+                    </div>
+                    <h3>React Technical Interview Practice Questions</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/D0S9KWOYCS61" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera D0S9KWOYCS61.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Learn React Router 6 -->
+                <div class="cert-card reveal" data-provider="scrimba">
+                    <div class="cert-card-top">
+                        <div class="cert-logo scrimba">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="cert-issuer">Scrimba</span>
+                    </div>
+                    <h3>Learn React Router 6</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/D7YSXDZH8RPT" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera D7YSXDZH8RPT.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Advanced React -->
+                <div class="cert-card reveal" data-provider="meta">
+                    <div class="cert-card-top">
+                        <div class="cert-logo meta">
+                            <i class="fab fa-meta"></i>
+                        </div>
+                        <span class="cert-issuer">Meta - Coursera</span>
+                    </div>
+                    <h3>Advanced React</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/FJA6U93UX4WG" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera FJA6U93UX4WG.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Learn CSS Flexbox -->
+                <div class="cert-card reveal" data-provider="scrimba">
+                    <div class="cert-card-top">
+                        <div class="cert-logo scrimba">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="cert-issuer">Scrimba</span>
+                    </div>
+                    <h3>Learn CSS Flexbox</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/GQJ89M54NU9C" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera GQJ89M54NU9C.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Learn Advanced React -->
+                <div class="cert-card reveal" data-provider="scrimba">
+                    <div class="cert-card-top">
+                        <div class="cert-logo scrimba">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="cert-issuer">Scrimba</span>
+                    </div>
+                    <h3>Learn Advanced React</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/HQCI44L5TCKG" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera HQCI44L5TCKG.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for AWS Cloud Technical Essentials -->
+                <div class="cert-card reveal" data-provider="aws">
+                    <div class="cert-card-top">
+                        <div class="cert-logo aws">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <span class="cert-issuer">AWS - Coursera</span>
+                    </div>
+                    <h3>AWS Cloud Technical Essentials</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/HRNU1C5DPLCD" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera HRNU1C5DPLCD.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Learn UI Design Fundamentals -->
+                <div class="cert-card reveal" data-provider="scrimba">
+                    <div class="cert-card-top">
+                        <div class="cert-logo scrimba">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="cert-issuer">Scrimba</span>
+                    </div>
+                    <h3>Learn UI Design Fundamentals</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/KB4NAUFE6JM9" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera KB4NAUFE6JM9.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Architecting Solutions on AWS -->
+                <div class="cert-card reveal" data-provider="aws">
+                    <div class="cert-card-top">
+                        <div class="cert-logo aws">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <span class="cert-issuer">AWS - Coursera</span>
+                    </div>
+                    <h3>Architecting Solutions on AWS</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/KJTBZWTUHOO9" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera KJTBZWTUHOO9.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for React Basics -->
+                <div class="cert-card reveal" data-provider="meta">
+                    <div class="cert-card-top">
+                        <div class="cert-logo meta">
+                            <i class="fab fa-meta"></i>
+                        </div>
+                        <span class="cert-issuer">Meta - Coursera</span>
+                    </div>
+                    <h3>React Basics</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/KTA86PLW4G4S" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera KTA86PLW4G4S.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Version Control -->
+                <div class="cert-card reveal" data-provider="meta">
+                    <div class="cert-card-top">
+                        <div class="cert-logo meta">
+                            <i class="fab fa-meta"></i>
+                        </div>
+                        <span class="cert-issuer">Meta - Coursera</span>
+                    </div>
+                    <h3>Version Control</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/KX8X7RYQWCUS" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera KX8X7RYQWCUS.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Learn JavaScript -->
+                <div class="cert-card reveal" data-provider="scrimba">
+                    <div class="cert-card-top">
+                        <div class="cert-logo scrimba">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="cert-issuer">Scrimba</span>
+                    </div>
+                    <h3>Learn JavaScript</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/MZC3QTASDXUF" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera MZC3QTASDXUF.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Interactivity with JavaScript -->
+                <div class="cert-card reveal" data-provider="michigan">
+                    <div class="cert-card-top">
+                        <div class="cert-logo michigan">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <span class="cert-issuer">U of Michigan - Coursera</span>
+                    </div>
+                    <h3>Interactivity with JavaScript</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/P5KSKTB78ZC5" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera P5KSKTB78ZC5.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Principles of UX/UI Design -->
+                <div class="cert-card reveal" data-provider="meta">
+                    <div class="cert-card-top">
+                        <div class="cert-logo meta">
+                            <i class="fab fa-meta"></i>
+                        </div>
+                        <span class="cert-issuer">Meta - Coursera</span>
+                    </div>
+                    <h3>Principles of UX/UI Design</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/PZE7UDWTJUYJ" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera PZE7UDWTJUYJ.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Async JavaScript -->
+                <div class="cert-card reveal" data-provider="scrimba">
+                    <div class="cert-card-top">
+                        <div class="cert-logo scrimba">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="cert-issuer">Scrimba</span>
+                    </div>
+                    <h3>Async JavaScript</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/ST6TQXM8W227" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera ST6TQXM8W227.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Coding Interview Preparation -->
+                <div class="cert-card reveal" data-provider="meta">
+                    <div class="cert-card-top">
+                        <div class="cert-logo meta">
+                            <i class="fab fa-meta"></i>
+                        </div>
+                        <span class="cert-issuer">Meta - Coursera</span>
+                    </div>
+                    <h3>Coding Interview Preparation</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/U7W8R42GVURB" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera U7W8R42GVURB.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Migrating to the AWS Cloud -->
+                <div class="cert-card reveal" data-provider="aws">
+                    <div class="cert-card-top">
+                        <div class="cert-logo aws">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <span class="cert-issuer">AWS - Coursera</span>
+                    </div>
+                    <h3>Migrating to the AWS Cloud</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/VLWTFOSWBY4C" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera VLWTFOSWBY4C.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Introduction to CSS3 -->
+                <div class="cert-card reveal" data-provider="michigan">
+                    <div class="cert-card-top">
+                        <div class="cert-logo michigan">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <span class="cert-issuer">U of Michigan - Coursera</span>
+                    </div>
+                    <h3>Introduction to CSS3</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/VP4CB2ZLPHB5" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera VP4CB2ZLPHB5.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Programming with JavaScript -->
+                <div class="cert-card reveal" data-provider="meta">
+                    <div class="cert-card-top">
+                        <div class="cert-logo meta">
+                            <i class="fab fa-meta"></i>
+                        </div>
+                        <span class="cert-issuer">Meta - Coursera</span>
+                    </div>
+                    <h3>Programming with JavaScript</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/X3PWSLJL4ZY5" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera X3PWSLJL4ZY5.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
 
 
+            </div>
+			1
 
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Get in touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-line"></div>
+            </div>
 
-    <link rel="stylesheet" href="custom2/css/font-awesome/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="custom2/css/fontello/css/fontello.css" />
-    <link rel="stylesheet" media="screen" href="custom2/css/styles.css" />
+            <div class="contact-grid reveal">
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h4>Phone</h4>
+                    <p><a href="tel:+918217577406">+91 8217577406</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h4>Location</h4>
+                    <p>Bangalore, Karnataka<br>India</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4>Email</h4>
+                    <p><a href="mailto:ashithjain97@gmail.com">ashithjain97@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="https://github.com/ashithjain" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/ashith-jain/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:ashithjain97@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p class="footer-text">
+                &copy; 2026 Ashith Jain. Made with <span class="heart">&hearts;</span> in Bangalore
+            </p>
+        </div>
+    </footer>
 
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-angle-up"></i>
+    </button>
 
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
-    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900'>
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arizonia">
-
-
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166628497-2"></script>
+    <!-- JavaScript -->
     <script>
-        window.onload = function() {
-            $('.imgzoom').imagePreviewer({
-                scroll: false
+    (function () {
+        'use strict';
 
+        // =========== Preloader ===========
+        window.addEventListener('load', function () {
+            const preloader = document.getElementById('preloader');
+            setTimeout(function () {
+                preloader.classList.add('hidden');
+            }, 400);
+        });
 
+        // =========== Navbar Scroll ===========
+        const navbar = document.getElementById('navbar');
+        const backToTop = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', function () {
+            const scrollY = window.scrollY;
+
+            // Navbar background
+            if (scrollY > 80) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            // Back to top
+            if (scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+
+            // Active nav link
+            updateActiveNav();
+        });
+
+        backToTop.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // =========== Mobile Nav Toggle ===========
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        navToggle.addEventListener('click', function () {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('open');
+        });
+
+        // Close mobile nav on link click
+        navLinks.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('open');
+            });
+        });
+
+        // =========== Active Nav Link ===========
+        function updateActiveNav() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinksList = document.querySelectorAll('.nav-links a');
+            let current = '';
+
+            sections.forEach(function (section) {
+                const sectionTop = section.offsetTop - 120;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
             });
 
-        };
+            navLinksList.forEach(function (link) {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // =========== Smooth Scroll ===========
+        document.querySelectorAll('.scrollto').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    const offsetTop = target.offsetTop - 70;
+                    window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // =========== Typed Text Effect ===========
+        const typedText = document.getElementById('typed-text');
+        const phrases = [
+            'Building Modern Web Apps',
+            'React & JavaScript Enthusiast',
+            'Turning Ideas into Code',
+            'Clean Code Advocate',
+            'Lifelong Learner'
+        ];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typingSpeed = 80;
+
+        function typeEffect() {
+            const currentPhrase = phrases[phraseIndex];
+
+            if (isDeleting) {
+                typedText.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+                typingSpeed = 40;
+            } else {
+                typedText.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+                typingSpeed = 80;
+            }
+
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                isDeleting = true;
+                typingSpeed = 1500; // Pause at end
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                typingSpeed = 400; // Pause before next
+            }
+
+            setTimeout(typeEffect, typingSpeed);
+        }
+
+        setTimeout(typeEffect, 1000);
+
+        // =========== Particle Effect ===========
+        const particleContainer = document.getElementById('particles');
+        function createParticles() {
+            for (let i = 0; i < 30; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (4 + Math.random() * 4) + 's';
+                particle.style.width = (1 + Math.random() * 3) + 'px';
+                particle.style.height = particle.style.width;
+                particleContainer.appendChild(particle);
+            }
+        }
+        createParticles();
+
+        // =========== Scroll Reveal (Intersection Observer) ===========
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const revealObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(function (el) {
+            revealObserver.observe(el);
+        });
+
+        // =========== Theme Toggle (Dark / Light Mode) ===========
+        const themeToggleBtn = document.getElementById('themeToggle');
+        
+        // Function to set theme
+        function setTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('portfolio-theme', theme);
+        }
+        
+        // Initialize theme from storage or system preference
+        const savedTheme = localStorage.getItem('portfolio-theme');
+        const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        
+        if (savedTheme === 'light' || (!savedTheme && systemPrefersLight)) {
+            setTheme('light');
+        } else {
+            setTheme('dark'); // Default to dark
+        }
+        
+        // Toggle theme on button click
+        themeToggleBtn.addEventListener('click', function () {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            setTheme(newTheme);
+        });
+
+        // =========== Specializations Courses Toggle ===========
+        const toggleButtons = document.querySelectorAll('.btn-toggle-courses');
+        toggleButtons.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                const targetId = btn.dataset.target;
+                const coursesList = document.getElementById(targetId);
+                
+                // Toggle active class on button
+                btn.classList.toggle('active');
+                
+                // Toggle open class on courses list
+                coursesList.classList.toggle('open');
+                
+                // Update icon inside button
+                const icon = btn.querySelector('i');
+                if (coursesList.classList.contains('open')) {
+                    icon.className = 'fas fa-chevron-up';
+                } else {
+                    icon.className = 'fas fa-chevron-down';
+                }
+            });
+        });
+
+        // =========== Interactive Filtering (Projects & Certs) ===========
+        
+        // Project Filter
+        const projectFilterBtns = document.querySelectorAll('[data-filter]');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        projectFilterBtns.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                projectFilterBtns.forEach(function (b) { b.classList.remove('active'); });
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+
+                projectCards.forEach(function (card) {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.classList.remove('filtered-out');
+                        card.style.display = '';
+                    } else {
+                        card.classList.add('filtered-out');
+                        // Delay display:none slightly to let scale animation play
+                        setTimeout(function() {
+                            if(card.classList.contains('filtered-out')) {
+                                card.style.display = 'none';
+                            }
+                        }, 400);
+                    }
+                });
+            });
+        });
+
+        // Certificates Filter
+        const certFilterBtns = document.querySelectorAll('[data-cert-filter]');
+        const certCards = document.querySelectorAll('.cert-card');
+
+        certFilterBtns.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                certFilterBtns.forEach(function (b) { b.classList.remove('active'); });
+                btn.classList.add('active');
+
+                const filter = btn.dataset.certFilter;
+
+                certCards.forEach(function (card) {
+                    if (filter === 'all' || card.dataset.provider === filter) {
+                        card.classList.remove('filtered-out');
+                        card.style.display = '';
+                    } else {
+                        card.classList.add('filtered-out');
+                        setTimeout(function() {
+                            if(card.classList.contains('filtered-out')) {
+                                card.style.display = 'none';
+                            }
+                        }, 400);
+                    }
+                });
+            });
+        });
+
+    })();
     </script>
+
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+    <!-- Google Analytics (your existing tag) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166628497-2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'UA-166628497-2');
     </script>
-
-    <script type="text/javascript" language="javascript">
-        window.addEventListener('contextmenu', function(e) {
-            console.log('context menu disabled');
-            e.preventDefault();
-        }, false);
-
-        document.addEventListener('mouseup', function(e) {
-            if (e.button === 2) {
-                console.log('right-click enabled');
-            }
-        }, false);
-    </script>
-
-
-    <script type="text/javascript" language="javascript">
-        $('body').bind('cut copy paste', function(e) {
-            e.preventDefault();
-        });
-    </script>
-
-    <script type="text/javascript" language="javascript">
-        document.onkeydown = function(e) {
-
-            //prevent key F12
-            if (event.keyCode == 123) {
-                return false;
-            }
-
-            //prevent CTRL + Shift + I
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-                return false;
-            }
-
-            //prevent CTRL + Shift + J
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-                return false;
-            }
-
-
-
-            //prevent CTRL + Shift + C
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-                return false;
-            }
-
-            //prevent CTRL + U 
-            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-                return false;
-            }
-        }
-    </script>
-
-
-    <div id="preloader" class="preloader">
-        <div class="loader-status">
-            <div class="spinner"></div>
-        </div>
-    </div>
-
-    <div class="site-container">
-
-        <div id="top"></div>
-
-
-        <a href="index" class="mobile-logo mobile-logo-light bg-black">
-            <span>Ashith Jain</span>
-        </a>
-
-
-        <button type="button" id="navigation-toggle" class="nav-toggle nav-toggle-light bg-black">
-				<span></span>
-			</button>
-
-
-        <header style="overflow-y: hidden;" class="site-header site-header-light bg-black">
-            <div class="header-inner">
-                <div class="header-brand">
-
-                    <a href="#" class="logo">
-                        <span>Ashith Jain</span>
-                        <span class="title-letter text-white opacity-5">AJ</span>
-
-                    </a>
-                </div>
-                <div class="nav-divider mb-2 d-none d-sm-block d-sm-none d-md-block "></div>
-                <nav class="site-nav">
-                    <ul id="navigation">
-
-                     
-
-                        <li style="text-align: center;">
-                            <a href="#home" class="scrollto">Home</a>
-                        </li>
-                        <li  style="text-align: center;">
-                            <a href="#about" class="scrollto">About</a>
-			</li>
-                        <li  style="text-align: center;">
-                            <a href="#resume" class="scrollto">Resume</a>
-                        </li>
-
-                        <li  style="text-align: center;">
-                            <a href="#skills" class="scrollto">Skills</a>
-                        </li>
-                        <!-- <li>
-                            <a href="#portfolio" class="scrollto">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#Certifications" class="scrollto">Certifications</a>
-                        </li> -->
-                        <li style="text-align: center;">
-                            <a href="#contact" class="scrollto">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="nav-divider md-2 d-none d-sm-block d-sm-none d-md-block "></div>
-
-                <nav>
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item">
-                            <a class="btn btn-sm btn-icon btn-outline-white btn-transparent rounded-circle" href="https://ashithjain.github.io">
-                                <span class="btn-icon-inner fab fa-github"></span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-sm btn-icon btn-outline-white btn-transparent rounded-circle" href="mailto:ashithjai97@gmail.com">
-                                <span class="btn-icon-inner fab fa-google"></span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-sm btn-icon btn-outline-white btn-transparent rounded-circle" href="https://linkedin.com/in/ashith-jain/">
-                                <span class="btn-icon-inner fab fa-linkedin"></span>
-                            </a>
-                        </li>
-
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <div class="header-overlay-hidden mt-n5">
-            <div class="overlay-inner bg-dark opacity-80"></div>
-        </div>
-
-        <button type="button" id="backtotop" class="btn btn-primary btn-icon">
-				<span class="btn-icon-inner fas fa-angle-up"></span>
-			</button>
-
-        <div class="page-wrapper">
-            <div id="page-cover" class="page-cover">
-                <div class="page-cover-wrapper-fixed">
-                    <div class="page-cover-bg">
-                        <div class="overlay-inner bg-image-holder bg-cover">
-                            <img src="images/home.jpg" alt="background"></div>
-                        <div class="overlay-inner bg-dark opacity-55"></div>
-                    </div>
-                    <div class="page-cover-wrap">
-
-                        <section id="home" class="d-flex mh-100vh">
-                            <div class="container align-self-center text-white text-center">
-                                <div class="u-avatar u-avatar-5x u-avatar-md-6x u-avatar-lg-7x u-avatar-modern u-avatar-rounded-circle mx-auto mb-4">
-                                    <img src="img/aj1.jpg" alt=""></div>
-                                <h1 class="mb-2 mb-lg-3">Ashith Jain</h1>
-                                <p class="lead mb-0">Web Developer</p>
-
-                            </div>
-                        </section>
-                    </div>
-                </div>
-            </div>
-
-            <div class="page-content">
-
-                <section id="about">
-                    <div class="container">
-                        <div class="section-title h2 text-center mb-5">
-                            <h2 class="mb-0">About Me</h2>
-
-                        </div>
-                        <div class="col-md-12 ">
-                            <div class="row">
-
-
-                                <h3>Ashith Jain</h3>
-                                </br>
-
-                                <p class="mb-5">I&rsquo;m Ashith Jain a Passionate Fullstack Web Developer love to design and build rich and optimized web applications ,Looking For a Professional Career in web developer.
-                                </p>
-                                <div class="col-md-6 ">
-                                    <div class="about-info text-dark">
-                                        <h4 class="text-dark">Personal Information</h4>
-                                        <div class="info-title">
-                                            <p class="text-dark">Phone</p>
-                                            <p class="text-dark">Email</p>
-                                            <p class="text-dark">website</p>
-
-                                        </div>
-
-                                        <div class="info-details text-dark">
-                                            <p class="text-dark">: +91-8217577406</p>
-                                            <p class="text-dark">: ashithjain97@gmail.com</p>
-                                            <p class="text-dark">: ashithjain.github.io</p>
-
-                                        </div>
-
-
-                                    </div>
-                                    </br>
-
-                                    <a href="Ashith_N_resume.pdf" class="text-center btn btn-dark"><i class="fa fa-eye"></i> View Resume</a>
-
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="about-extra">
-                                        <h4 class="text-dark">Hobbies & Interests</h4>
-                                        <div class="about-extra-icon">
-                                            <ul>
-                                                <li>
-                                                    <p class="text-dark"><i class="fa fa-gamepad"></i><br><span>Games</span></p>
-                                                </li>
-                                                <li>
-                                                    <p class="text-dark"><i class="fa fa-headphones"></i><br><span>Music</span></p>
-                                                </li>
-                                                <li>
-                                                    <p class="text-dark"><i class="fa fa-plane"></i><br><span>Travel</span></p>
-                                                </li>
-                                                <li>
-                                                    <p class="text-dark"><i class="fa fa-laptop"></i><br><span>Coding</span></p>
-                                                </li>
-                                                <li>
-                                                    <p class="text-dark"><i class="fa fa-video-camera"></i><br><span>Cinema</span></p>
-                                                </li>
-                                                <li>
-                                                    <p class="text-dark"><i class="fa fa-desktop"></i><br><span>Gadjets</span></p>
-                                                </li>
-                                                <li>
-                                                    <p class="text-dark"><i class="fab fa-chrome"></i><br><span>Browsing</p>
-                                                </li>
-                                                <li>
-                                                    <p class="text-dark"><i class="fa fa-sitemap"></i><br><span>Technology</span></p>
-                                                </li>
-                                                <li>
-                                                    <p class="text-dark"><i class="fas fa-newspaper"></i><br><span>Magazines</span></p>
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div class="col-md-12">
-                                    <div class="about-info">
-                                        <h4 class="text-dark">Education</h4>
-                                        <div class="row">
-                                            <div class="col-md-6 mb-2">
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <h5> Graduation</h5>
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <blockquote class="blockquote mb-0">
-                                                            <p class="h6">B.E Computer Science & Engineering</p>
-                                                        </blockquote>
-
-                                                        <p>Visvesvaraya Technological University, <br>B.C.E College, 2015 - 2020</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-6 ">
-                                                <div class="card">
-                                                    <div class="card-header">
-                                                        <h5> Pre University</h5>
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <blockquote class="blockquote mb-0">
-                                                            <p class="h6">Science (P.C.M.B)</p>
-                                                        </blockquote>
-
-                                                        <p>S.D.M College,ujire <br> 2013 - 2015</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </section>
-
-
-
-
-                <section id="skills" class="section text-white bg-black">
-                    <div class="container">
-
- 
-
-                        <div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12 col-sm-12 col-xs-12" style="text-align:center; ">
-                                        <div class="feature-block feature-boxed feature-decorated">
-                                            <h2 class="text-center mt-2 mt-sm-0 mt-xs-0 mb-2 mb-sm-0 mb-xs-0 mb-md-n5">Technologies Worked On</h2>
-
-                                            <div class="row p-md-8 p-sm-4 p-xs-4">
-
-
-                                                <div class="col col-md-2 col-sm-6 col-xs-6 pb-2">
-
-                                                    <div class="feature-block feature-boxed feature-decorated" style="height:133px; width:auto;">
-                                                        <img src="img/skills/py.png" style="text-align:center; ">
-                                                        <p><b>Python</b></p>
-
-
-
-                                                    </div>
-                                                </div>
-
-                                                
-
-                                                <div class="col-md-1 d-none d-md-block d-lg-block d-xl-block"></div>
-
-                                                <div class="col col-md-2 col-sm-6 col-xs-6 pb-2">
-
-                                                    <div class="feature-block feature-boxed feature-decorated" style="height:133px; width:auto;">
-                                                        <img src="img/skills/github.png">
-                                                        <p><b>Github</b></p>
-                                                    </div>
-                                                </div>
-
-                                               
-                                            </div>
-
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-sm-12 col-xs-12" style="text-align:center;">
-
-                                        <div class="feature-block feature-boxed feature-decorated">
-
-                                            <h2 class=" text-center mt-2 mt-sm-0 mt-xs-0 mb-2 mb-sm-0 mb-xs-0 mb-md-n5">Web Technologies</h2>
-                                            <div class="row p-md-8 p-sm-4 p-xs-4">
-
-                                                <div class="col col-md-2 col-sm-6 col-xs-6 pb-2">
-                                                    <div class="feature-block feature-boxed feature-decorated" style="height:133px; width:auto;">
-
-                                                        <img src="img/skills/html.png">
-                                                        <p><b>Html</b></p>
-
-
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="col-md-1 d-none d-md-block d-lg-block d-xl-block"></div>
-
-                                                <div class="col col-md-2 col-sm-6 col-xs-6 pb-2">
-                                                    <div class="feature-block feature-boxed feature-decorated" style="height:133px; width:auto;">
-
-                                                        <img src="img/skills/css.png">
-                                                        <p><b>Css</b></p>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-1 d-none d-md-block d-lg-block d-xl-block"></div>
-                                                <div class="col col-md-2 col-sm-6 col-xs-6 pb-2">
-                                                    <div class="feature-block feature-boxed feature-decorated" style="height:133px; width:auto;">
-
-                                                        <img src="img/skills/js.png">
-                                                        <p><b>JavaScript</b></p>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-1 d-none d-md-block d-lg-block d-xl-block"></div>
-
-                                                <div class="col col-md-2 col-sm-6 col-xs-6 pb-2">
-                                                    <div class="feature-block feature-boxed feature-decorated" style="height:133px; width:auto;">
-
-                                                        <img src="img/skills/Jquery.png">
-                                                        <p><b>Jquery</b></p>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col col-md-2 col-sm-6 col-xs-6 pb-2">
-                                                    <div class="feature-block feature-boxed feature-decorated" style="height:133px; width:auto;">
-
-                                                        <img src="img/skills/bootstrap.png">
-                                                        <p><b>Bootstrap</b></p>
-                                                    </div>
-                                                </div>
-
-
-                                                <div class="col-md-1 d-none d-md-block d-lg-block d-xl-block"></div>
-                                                <div class="col col-md-2 col-sm-6 col-xs-6 pb-2">
-                                                    <div class="feature-block feature-boxed feature-decorated" style="height:133px; width:auto;">
-
-                                                        <img class="bg-light" src="img/skills/sql.png">
-                                                        <p><b>SQL</b></p>
-                                                    </div>
-                                                </div>
-
-                                                <!-- <div class="col-md-1 d-none d-md-block d-lg-block d-xl-block"></div>
-                                                <div class="col col-md-2 col-sm-6 col-xs-6 pb-2">
-                                                    <div class="feature-block feature-boxed feature-decorated" style="height:133px; width:auto;">
-
-                                                        <img src="img/skills/php.png">
-                                                        <p><b>PHP</b></p>
-                                                    </div>
-                                                </div> -->
-
-                                                <div class="col-md-1 d-none d-md-block d-lg-block d-xl-block"></div>
-                                                <div class="col col-md-2 col-sm-6 col-xs-6 pb-2">
-                                                    <div class="feature-block feature-boxed feature-decorated" style="height:133px; width:auto;">
-
-                                                        <img src="img/skills/restapi.png">
-                                                        <p><b>Rest Api</b></p>
-                                                    </div>
-                                                </div>
-
-                                                
-
-                                                <div class="col-md-1 d-none d-md-block d-lg-block d-xl-block"></div>
-
-                                                <div class="col col-md-2 col-sm-6 col-xs-6 pb-2">
-                                                    <div class="feature-block feature-boxed feature-decorated" style="height:133px; width:auto;">
-
-                                                        <img src="img/skills/cpanel.png">
-                                                        <p><b>Web&nbspHosting</b></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-                    </div>
-
-
-
-
-                </section>
-
-
-
-
-
-
-
-
-
-
-
-
-                <!-- <section id="portfolio">
-                    <div class="port">
-                        <div class="container">
-                            <div class="row mb-5">
-                                <div class="col-lg-10 col-xl-8 mx-lg-auto text-center">
-                                    <div class="section-title h2 mb-3">
-                                        <h2 class="mb-0">Portfolio</h2>
-
-                                    </div>
-                                    <nav class="portfolio-filter isotope-filter">
-                                        <ul class="justify-content-center">
-                                            <li><a href="#" class="active" data-filter="*">All</a></li>
-                                            <li><a href="#" data-filter=".ml">Machine Learning</a></li>
-                                            <li><a href="#" data-filter=".web">Web</a></li>
-                                            <li><a href="#" data-filter=".iot">Internet of Things</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-
-
-                            <div class="container">
-                                <div class="portfolio-container isotope-container row my-n2 mx-sm-n2" style="text-align: center;">
-
-                                    <div class="isotope-item col-sm-6 col-lg-4 py-2 px-sm-2 ml">
-                                        <div class="portfolio-item details-inside">
-                                            <a href="project-ml-Bigmart-sales-prediction">
-                                                <div class="item-media">
-                                                    <img src="img/bmsp/bmse.png" style="height:200px;width: 100%;"></div>
-                                                <div class="item-overlay bg-dark"></div>
-                                                <div class="item-details">
-
-                                                </div>
-                                            </a>
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Bigmart Sales Prediction</h5>
-                                                    </br>
-                                                    <h6 class="card-subtitle mb-2 text-muted">Machine Learning/Data Science</h6>
-                                                    <p class="card-text"></p>
-                                                    <a href="https://github.com/aradhyapavan/Bigmart-Sales-Prediction" class="card-link">Live Demo</a>
-                                                    <a href="project-ml-Bigmart-sales-prediction" class="card-link">Description</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="isotope-item col-sm-6 col-lg-4 py-2 px-sm-2 ml">
-                                        <div class="portfolio-item details-inside">
-                                            <a href="project-ml-churn-prediction">
-                                                <div class="item-media">
-                                                    <img src="img/ccp/ccpe.png" style="height:200px;width: 100%" alt=""></div>
-                                                <div class="item-overlay bg-dark"></div>
-                                                <div class="item-details">
-
-                                                </div>
-                                            </a>
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Customer Churn Prediction</h5>
-                                                    </br>
-                                                    <h6 class="card-subtitle mb-2 text-muted">Machine Learning/Data Science</h6>
-                                                    <p class="card-text"></p>
-                                                    <a href="https://github.com/aradhyapavan/Customer-Churn-Prediction" class="card-link">Live Demo</a>
-                                                    <a href="project-ml-churn-prediction" class="card-link">Description</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="isotope-item col-sm-6 col-lg-4 py-2 px-sm-2 ml">
-                                        <div class="portfolio-item details-inside">
-                                            <a href="project-ml-loan-prediction">
-                                                <div class="item-media">
-                                                    <img src="img/fdf/fdf.png" style="height:200px;width: 100%" alt=""></div>
-                                                <div class="item-overlay bg-dark"></div>
-                                                <div class="item-details">
-
-                                                </div>
-                                            </a>
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Food Demand Forcasting</h5>
-                                                    </br>
-                                                    <h6 class="card-subtitle mb-2 text-muted">Machine Learning/Data Science</h6>
-                                                    <p class="card-text"></p>
-                                                    <a href="#" class="card-link">Live Demo</a>
-                                                    <a href="project-ml-fdf" class="card-link">Description</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="isotope-item col-sm-6 col-lg-4 py-2 px-sm-2 ml">
-                                        <div class="portfolio-item details-inside">
-                                            <a href="project-ml-loan-prediction">
-                                                <div class="item-media">
-                                                    <img src="img/nyt/nyt.png" style="height:200px;width: 100%" alt=""></div>
-                                                <div class="item-overlay bg-dark"></div>
-                                                <div class="item-details">
-
-                                                </div>
-                                            </a>
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">NYC Taxi Trip Prediction</h5>
-                                                    </br>
-                                                    <h6 class="card-subtitle mb-2 text-muted">Machine Learning/Data Science</h6>
-                                                    <p class="card-text"></p>
-                                                    <a href="#" class="card-link">Live Demo</a>
-                                                    <a href="project-ml-nyt" class="card-link">Description</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="isotope-item col-sm-6 col-lg-4 py-2 px-sm-2 ml">
-                                        <div class="portfolio-item details-inside">
-                                            <a href="project-ml-mdp">
-                                                <div class="item-media">
-                                                    <img src="img/mdp/mdp.png" style="height:200px;width: 100%" alt=""></div>
-                                                <div class="item-overlay bg-dark"></div>
-                                                <div class="item-details">
-
-                                                </div>
-                                            </a>
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Malaria Detection From Blood Samples</h5>
-                                                    </br>
-                                                    <h6 class="card-subtitle mb-2 text-muted">Machine Learning/Data Science</h6>
-                                                    <p class="card-text"></p>
-                                                    <a href="#" class="card-link">Live Demo</a>
-                                                    <a href="project-ml-mdp" class="card-link">Description</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="isotope-item col-sm-6 col-lg-4 py-2 px-sm-2 ml">
-                                        <div class="portfolio-item details-inside">
-                                            <a href="project-ml-wpc">
-                                                <div class="item-media">
-                                                    <img src="img/wpc/wpc.png" style="height:200px;width: 100%" alt=""></div>
-                                                <div class="item-overlay bg-dark"></div>
-                                                <div class="item-details">
-
-                                                </div>
-                                            </a>
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Web Page Classification</h5>
-                                                    </br>
-                                                    <h6 class="card-subtitle mb-2 text-muted">Machine Learning/Data Science</h6>
-                                                    <p class="card-text"></p>
-                                                    <a href="#" class="card-link">Live Demo</a>
-                                                    <a href="project-ml-wpc" class="card-link">Description</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="isotope-item col-sm-6 col-lg-4 py-2 px-sm-2 ml">
-                                        <div class="portfolio-item details-inside">
-                                            <a href="project-ml-sac">
-                                                <div class="item-media">
-                                                    <img src="img/sac/sac.png" style="height:200px;width: 100%" alt=""></div>
-                                                <div class="item-overlay bg-dark"></div>
-                                                <div class="item-details">
-
-                                                </div>
-                                            </a>
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Segmenting and Clustering Neighborhoods in Toronto & NewYork City
-                                                    </h5>
-
-                                                    <h6 class="card-subtitle mb-2 text-muted">Machine Learning/Data Science</h6>
-                                                    <p class="card-text"></p>
-                                                    <a href="https://eu-gb.dataplatform.cloud.ibm.com/analytics/notebooks/v2/f791f1fc-be16-46f1-9bbc-7285f12dc0b0/view?access_token=187a0d557f9aa119e50a1cb22265adf3fde7099544664f1da74aa54abb77fe58" class="card-link">Live Demo</a>
-                                                    <a href="project-ml-sac" class="card-link">Description</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="isotope-item col-sm-6 col-lg-4 py-2 px-sm-2 ml">
-                                        <div class="portfolio-item details-inside">
-                                            <a href="project-ml-loan-prediction">
-                                                <div class="item-media">
-                                                    <img src="img/lp/lpe.png" style="height:200px;width: 100%" alt=""></div>
-                                                <div class="item-overlay bg-dark"></div>
-                                                <div class="item-details">
-
-                                                </div>
-                                            </a>
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Classifier to Predict Loan Case will be Paid off or not </h5>
-                                                    </br>
-
-                                                    <h6 class="card-subtitle mb-2 text-muted">Machine Learning/Data Science</h6>
-                                                    <p class="card-text"></p>
-                                                    <a href="#" class="card-link">Live Demo</a>
-                                                    <a href="project-ml-loan-prediction" class="card-link">Description</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-
-
-                                    <div class="isotope-item col-sm-6 col-lg-4 py-2 px-sm-2 ml">
-                                        <div class="portfolio-item details-inside">
-                                            <a href="project-ml-titanic-survivor-prediction">
-                                                <div class="item-media">
-                                                    <img src="img/tsp/tspe.png" style="height:200px;width: 100%" alt=""></div>
-                                                <div class="item-overlay bg-dark"></div>
-                                                <div class="item-details">
-
-                                                </div>
-                                            </a>
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Titanic Ship Survivor Prediction</h5>
-                                                    </br>
-                                                    <h6 class="card-subtitle mb-2 text-muted">Machine Learning/Data Science</h6>
-                                                    <p class="card-text"></p>
-                                                    <a href="#" class="card-link">Live Demo</a>
-                                                    <a href="project-ml-titanic-survivor-prediction" class="card-link">Description</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="isotope-item col-sm-6 col-lg-4 py-2 px-sm-2 ml">
-                                        <div class="portfolio-item details-inside">
-                                            <a href="project-ml-ibm-lab-projects">
-                                                <div class="item-media">
-                                                    <img src="img/ilp/ibmlpe.png" style="height:200px;width: 100%" alt=""></div>
-                                                <div class="item-overlay bg-dark"></div>
-                                                <div class="item-details">
-
-                                                </div>
-                                            </a>
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">IBM Hands on Lab Projects</h5>
-                                                    </br>
-                                                    <h6 class="card-subtitle mb-2 text-muted">Machine Learning/Data Science</h6>
-                                                    <p class="card-text"></p>
-                                                    <a href="#" class="card-link">Live Demo</a>
-                                                    <a href="project-ml-ibm-lab-projects" class="card-link">Description</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-
-
-
-
-                                    <div class="isotope-item col-sm-6 col-lg-4 py-2 px-sm-2 web">
-                                        <div class="portfolio-item details-inside">
-                                            <a href="project-web-cams">
-                                                <div class="item-media">
-                                                    <img src="img/cams/cams2e.png" style="height:200px;width: 100%" alt=""></div>
-                                                <div class="item-overlay bg-dark"></div>
-                                                <div class="item-details">
-
-                                                </div>
-                                            </a>
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">College Academic Management System</h5>
-                                                    <h6 class="card-subtitle mb-2 text-muted">Web</h6>
-                                                    <p class="card-text"></p>
-                                                    <a href="http://camsp.ml/" class="card-link" target="_blank">Live Demo</a>
-                                                    <a href="project-web-cams" class="card-link">Description</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="isotope-item col-sm-6 col-lg-4 py-2 px-sm-2 web">
-                                        <div class="portfolio-item details-inside">
-                                            <a href="project-web-translator">
-                                                <div class="item-media">
-                                                    <img src="img/llt/llt.png" style="height:200px;width: 100%" alt=""></div>
-                                                <div class="item-overlay bg-dark"></div>
-                                                <div class="item-details">
-
-                                                </div>
-                                            </a>
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Language to Language Translator(Text)</h5>
-
-                                                    <h6 class="card-subtitle mb-2 text-muted">Web</h6>
-                                                    <p class="card-text"></p>
-                                                    <a href="http://lltranslator.is-best.net/" class="card-link" target="_blank">Live Demo</a>
-                                                    <a href="project-web-translator" class="card-link">Description</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="isotope-item col-sm-6 col-lg-4 py-2 px-sm-2 web">
-                                        <div class="portfolio-item details-inside">
-                                            <a href="project-web-curated">
-                                                <div class="item-media">
-                                                    <img src="img/curated/curated.png" style="height:200px;width: 100%" alt=""></div>
-                                                <div class="item-overlay bg-dark"></div>
-                                                <div class="item-details">
-
-                                                </div>
-                                            </a>
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Curated Movies</h5>
-                                                    </br>
-                                                    <h6 class="card-subtitle mb-2 text-muted">Web</h6>
-                                                    <p class="card-text"></p>
-                                                    <a href="http://movies-for-u.herokuapp.com" class="card-link" target="_blank">Live Demo</a>
-                                                    <a href="project-web-curated" class="card-link">Description</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="isotope-item col-sm-6 col-lg-4 py-2 px-sm-2 web">
-                                        <div class="portfolio-item details-inside">
-                                            <a href="project-web-rp">
-                                                <div class="item-media">
-                                                    <img src="img/rp/rp1e.png" style="height:200px;width: 100%" alt=""></div>
-                                                <div class="item-overlay bg-dark"></div>
-                                                <div class="item-details">
-
-                                                </div>
-                                            </a>
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Rapid Ports Company Website</h5>
-                                                    </br>
-                                                    <h6 class="card-subtitle mb-2 text-muted">Web</h6>
-                                                    <p class="card-text"></p>
-                                                    <a href="http://rapidport.ml/" class="card-link" target="_blank">Live Demo</a>
-                                                    <a href="project-web-rp" class="card-link">Description</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="isotope-item col-sm-6 col-lg-4 py-2 px-sm-2 web">
-                                        <div class="portfolio-item details-inside">
-                                            <a href="project-web-oms">
-                                                <div class="item-media">
-                                                    <img src="img/oms/oms1e.png" style="height:200px;width: 100%" alt=""></div>
-                                                <div class="item-overlay bg-dark"></div>
-                                                <div class="item-details">
-
-                                                </div>
-                                            </a>
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Online Mobile Store</h5>
-                                                    </br>
-                                                    <h6 class="card-subtitle mb-2 text-muted">Web</h6>
-                                                    <p class="card-text"></p>
-                                                    <a href="http://omsp.ml" class="card-link" target="_blank">Live Demo</a>
-                                                    <a href="project-web-oms" class="card-link">Description</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="isotope-item col-sm-6 col-lg-4 py-2 px-sm-2 web">
-                                        <div class="portfolio-item details-inside">
-                                            <a href="project-web-mtk">
-                                                <div class="item-media">
-                                                    <img src="img/mtk/mtk3.png" style="height:200px;width: 100%" alt=""></div>
-                                                <div class="item-overlay bg-dark"></div>
-                                                <div class="item-details">
-
-                                                </div>
-                                            </a>
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Spirit of Kagga</h5>
-                                                    <h6 class="card-subtitle mb-2 text-muted">Web</h6>
-                                                    <p class="card-text"></p>
-                                                    <a href="http://mtkp.ml" class="card-link" target="_blank">Live Demo</a>
-                                                    <a href="project-web-mtk" class="card-link">Description</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="isotope-item col-sm-6 col-lg-4 py-2 px-sm-2 web">
-                                        <div class="portfolio-item details-inside">
-                                            <a href="project-web-ps">
-                                                <div class="item-media">
-                                                    <img src="img/ps/ps3e.png" style="height:200px;width: 100%" alt=""></div>
-                                                <div class="item-overlay bg-dark"></div>
-                                                <div class="item-details">
-
-                                                </div>
-                                            </a>
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Paradise Spaces Company Website</h5>
-                                                    <h6 class="card-subtitle mb-2 text-muted">Web</h6>
-                                                    <p class="card-text"></p>
-                                                    <a href="#" class="card-link">Live Demo</a>
-                                                    <a href="project-web-ps" class="card-link">Description</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-
-                                    <div class="isotope-item col-sm-6 col-lg-4 py-2 px-sm-2 iot">
-                                        <div class="portfolio-item details-inside">
-                                            <a href="project-iot-affs">
-                                                <div class="item-media">
-                                                    <img src="img/affs/affs2e.png" style="height:200px;width: 100%" alt=""></div>
-                                                <div class="item-overlay bg-dark"></div>
-                                                <div class="item-details">
-
-                                                </div>
-                                            </a>
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">Automatic Fish Feeder System</h5>
-                                                    </br>
-                                                    <h6 class="card-subtitle mb-2 text-muted">Internet Of Things</h6>
-                                                    <p class="card-text"></p>
-                                                    <a href="project-iot-affs" class="card-link">Description</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </section> -->
-
-
-                <section>
-                    <div class="overlay">
-                        <div class="overlay-inner bg-image-holder bg-cover bg-center">
-                            <img src="images/images-image-5.jpg" alt="background"></div>
-                        <div class="overlay-inner bg-dark opacity-70"></div>
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-11 col-xl-10 mx-lg-auto text-center text-white">
-                                <div class="slider dots-light dots-outside" data-slick='{"dots":true,"arrows":false}'>
-
-                                    <div>
-                                        <div class="icon-font-3x mb-5">
-                                            <i class="fa fa-quote-right"></i>
-                                        </div>
-                                        <blockquote>
-                                            <p class="mb-5">Everything Comes With a Cost , So Decide How Much Cost You Can Bear..... </p>
-                                            <footer class="d-flex justify-content-center align-items-center w-lg-50 mx-auto text-left">
-                                                <div class="u-avatar u-avatar-rounded-circle">
-                                                    <img class="img-fluid" src="img/insp/anonymous.png" alt=""></div>
-                                                <div class="ml-3">
-                                                    <h4 class="h6 mb-0">Anonymous</h4>
-                                                    <small>Motivator</small>
-                                                </div>
-                                            </footer>
-                                        </blockquote>
-                                    </div>
-                                    <div>
-                                        <div class="icon-font-3x mb-5">
-                                            <i class="fa fa-quote-right"></i>
-                                        </div>
-                                        <blockquote>
-                                            <p class="mb-5">Take Risks Now,Do Something Bold You Won't Regret It.</p>
-                                            <footer class="d-flex justify-content-center align-items-center w-lg-50 mx-auto text-left">
-                                                <div class="u-avatar u-avatar-rounded-circle">
-                                                    <img class="img-fluid" src="img/insp/elonmusk.png" alt=""></div>
-                                                <div class="ml-3">
-                                                    <h4 class="h6 mb-0">Elon Musk</h4>
-                                                    <small>CEO of SpaceX</small>
-                                                </div>
-                                            </footer>
-                                        </blockquote>
-                                    </div>
-
-                                    <div>
-                                        <div class="icon-font-3x mb-5">
-                                            <i class="fa fa-quote-right"></i>
-                                        </div>
-                                        <blockquote>
-                                            <p class="mb-5">Don't Just Aspire To Make a Living. Aspire To Make a Difference. </p>
-                                            <footer class="d-flex justify-content-center align-items-center w-lg-50 mx-auto text-left">
-                                                <div class="u-avatar u-avatar-rounded-circle">
-                                                    <img class="img-fluid" src="img/insp/denzel.png" alt=""></div>
-                                                <div class="ml-3">
-                                                    <h4 class="h6 mb-0">Denzel Hayes Washington Jr</h4>
-                                                    <small>Actor</small>
-                                                </div>
-                                            </footer>
-                                        </blockquote>
-                                    </div>
-
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                                <section id="contact" class=" text-white bg-black">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-10 mx-lg-auto">
-                                <div class="row mb-5">
-                                    <div class="col-lg-8 mx-lg-auto text-center">
-                                        <div class="section-title h2 mb-3">
-                                            <h2 class="mb-0">Contact</h2>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="row mb-5">
-                                    <div class="col-md-4 mb-5 mb-md-0">
-                                        <div class="feature-block">
-                                            <div class="feature-icon text-primary mb-4">
-                                                <div class="mx-auto">
-
-                                                    <i class="ti-mobile"></i>
-                                                </div>
-                                            </div>
-                                            <p class="text-center">+91 8217577406 </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4 mb-5 mb-md-0">
-                                        <div class="feature-block">
-                                            <div class="feature-icon text-primary mb-4">
-                                                <div class="mx-auto">
-                                                    <i class="ti-location-pin"></i>
-                                                </div>
-                                            </div>
-                                            <p class="text-center">Banglore,Karnataka<br> India</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="feature-block">
-                                            <div class="feature-icon text-primary mb-4">
-                                                <div class="mx-auto">
-                                                    <i class="ti-email"></i>
-                                                </div>
-                                            </div>
-                                            <p class="text-center text-white"><a href="mailto:ashithjain97@gmail.com" class="text-white">ashithjain97@gmail.com</a><br></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <footer class="site-footer bg-light">
-                    <div class="container">
-                        <nav class="mb-3">
-                            <ul class="list-inline text-center">
-                                <li class="list-inline-item">
-                                    <a class="btn btn-sm btn-icon btn-outline-dark btn-transparent rounded-circle" href="https://ashithjain.github.io">
-                                        <span class="btn-icon-inner fab fa-github"></span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="btn btn-sm btn-icon btn-outline-dark btn-transparent rounded-circle" href="mailto:ashithjain97@gmail.com">
-                                        <span class="btn-icon-inner fab fa-google"></span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a class="btn btn-sm btn-icon btn-outline-dark btn-transparent rounded-circle" href="https://www.linkedin.com/in/ashith-jain-6898751a7/">
-                                        <span class="btn-icon-inner fab fa-linkedin"></span>
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </nav>
-
-                    </div>
-                </footer>
-            </div>
-
-        </div>
-
-
-    </div>
-
-    <script src="custom/js/js-jquery.min.js"></script>
-    <script src="custom/js/js-bootstrap.bundle.min.js"></script>
-    <script src="custom/js/js-jquery.easing.min.js"></script>
-    <script src="custom/js/js-jquery.validate.min.js"></script>
-    <script src="custom/js/js-jquery.form.min.js"></script>
-    <script src="custom/js/js-imagesloaded.pkgd.min.js"></script>
-    <script src="custom/js/js-isotope.pkgd.min.js"></script>
-    <script src="custom/js/js-jquery.detect_swipe.min.js"></script>
-    <script src="custom/js/js-featherlight.min.js"></script>
-    <script src="custom/js/js-featherlight.gallery.min.js"></script>
-    <script src="custom/js/js-granim.min.js"></script>
-    <script src="custom/js/js-slick.min.js"></script>
-    <script src="custom/js/js-vegas.min.js"></script>
-    <script src="custom/js/js-typed.min.js"></script>
-    <script src="custom/js/js-main.js"></script>
-
-    <script type="text/javascript" src="custom/js/jquery-imagepreviewer.js"></script>
-
-
 
 </body>
 

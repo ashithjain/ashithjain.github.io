@@ -1,0 +1,1738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashith Jain | Full-Stack Web Developer</title>
+    <meta name="description" content="Ashith Jain is a passionate full-stack web developer. Explore projects, skills, and certifications in web development, React, JavaScript, and Python.">
+    <meta name="keywords" content="Ashith Jain, Web Developer, Fullstack Developer, Portfolio, React, JavaScript, Python">
+    <meta name="author" content="Ashith Jain">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ashith Jain | Full-Stack Web Developer">
+    <meta property="og:description" content="Portfolio showcasing projects, skills, and certifications.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ashithjain.github.io">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="img/icons/site-icon.svg">
+    <link rel="alternate icon" href="img/icons/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#hero" class="nav-logo">AJ<span>.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="scrollto active">Home</a></li>
+                <li><a href="#about" class="scrollto">About</a></li>
+                <li><a href="#skills" class="scrollto">Skills</a></li>
+                <li><a href="#projects" class="scrollto">Projects</a></li>
+                <li><a href="#certificates" class="scrollto">Certificates</a></li>
+                <li><a href="#contact" class="scrollto">Contact</a></li>
+            </ul>
+            <div style="display: flex; align-items: center;">
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle light/dark theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-bg-image" style="background-image: url('img/hero-bg.jpg');"></div>
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-avatar reveal">
+                <img src="img/profile.jpg" alt="Ashith Jain">
+            </div>
+            <h1 class="hero-title reveal reveal-delay-1">Ashith Jain</h1>
+            <p class="hero-subtitle reveal reveal-delay-2">Fullstack Web Developer</p>
+            <div class="hero-typed reveal reveal-delay-3" id="typed-output">
+                <span id="typed-text"></span><span class="cursor">|</span>
+            </div>
+            <div class="hero-socials reveal reveal-delay-4">
+                <a href="https://github.com/ashithjain" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/ashith-jain/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:ashithjain97@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about" class="scrollto">
+                <div class="scroll-indicator"></div>
+                <span>Scroll</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <h3>Hi, I'm Ashith Jain ðŸ‘‹</h3>
+                    <p>
+                        I'm a passionate Fullstack Web Developer who loves to design and build rich, 
+                        optimized web applications. With a strong foundation in Computer Science and a 
+                        keen eye for modern UI/UX design, I create digital experiences that are both 
+                        beautiful and functional.
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <span class="label">Phone</span>
+                            <span class="value">+91 8217577406</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Email</span>
+                            <span class="value"><a href="mailto:ashithjain97@gmail.com">ashithjain97@gmail.com</a></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Website</span>
+                            <span class="value"><a href="https://ashithjain.github.io">ashithjain.github.io</a></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Location</span>
+                            <span class="value">Bangalore, Karnataka, India</span>
+                        </div>
+                    </div>
+                    <a href="resume.pdf" class="btn-primary" target="_blank">
+                        <i class="fas fa-eye"></i> View Resume
+                    </a>
+
+                    <div class="hobbies-grid">
+                        <span class="hobby-tag"><i class="fas fa-gamepad"></i> Gaming</span>
+                        <span class="hobby-tag"><i class="fas fa-headphones"></i> Music</span>
+                        <span class="hobby-tag"><i class="fas fa-plane"></i> Travel</span>
+                        <span class="hobby-tag"><i class="fas fa-laptop-code"></i> Coding</span>
+                        <span class="hobby-tag"><i class="fas fa-film"></i> Cinema</span>
+                        <span class="hobby-tag"><i class="fas fa-microchip"></i> Gadgets</span>
+                        <span class="hobby-tag"><i class="fas fa-globe"></i> Browsing</span>
+                        <span class="hobby-tag"><i class="fas fa-rocket"></i> Technology</span>
+                    </div>
+                </div>
+                <div class="education-cards reveal reveal-delay-2">
+                    <div class="edu-card">
+                        <div class="edu-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>B.E Computer Science & Engineering</h4>
+                        <p class="edu-school">Visvesvaraya Technological University, B.C.E College</p>
+                        <p class="edu-year"><i class="far fa-calendar-alt"></i> 2015 â€” 2020</p>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <h4>Pre University â€” Science (P.C.M.B)</h4>
+                        <p class="edu-school">S.D.M College, Ujire</p>
+                        <p class="edu-year"><i class="far fa-calendar-alt"></i> 2013 â€” 2015</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">What I work with</span>
+                <h2 class="section-title">Technologies & Skills</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Programming Languages -->
+            <div class="skills-category reveal">
+                <h3>Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="devicon-python-plain colored"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-typescript-plain colored"></i>
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-java-plain colored"></i>
+                        <span>Java</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frontend -->
+            <div class="skills-category reveal reveal-delay-1">
+                <h3>Frontend Technologies</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="devicon-html5-plain colored"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-css3-plain colored"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-react-original colored"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-nextjs-plain"></i>
+                        <span>Next.js</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-bootstrap-plain colored"></i>
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-jquery-plain colored"></i>
+                        <span>jQuery</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend & Tools -->
+            <div class="skills-category reveal reveal-delay-2">
+                <h3>Backend & Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="devicon-nodejs-plain colored"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-mysql-plain colored"></i>
+                        <span>SQL</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-git-plain colored"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="devicon-github-original"></i>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-cloud"></i>
+                        <span>REST API</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-server"></i>
+                        <span>Web Hosting</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="project-filters reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="react">React</button>
+                <button class="filter-btn" data-filter="other">Other</button>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+
+                <!-- Computer Accessories Website -->
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ashithjain/computer-accessories-website" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://ashithjain.github.io/computer-accessories-website" target="_blank" rel="noopener noreferrer" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Computer Accessories Website</h3>
+                        <p>A responsive e-commerce website showcasing computer accessories with modern UI design and product catalog features.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expense Tracker -->
+                <div class="project-card reveal reveal-delay-1" data-category="react">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ashithjain/Expense-traker" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Expense Tracker</h3>
+                        <p>A full-featured expense tracking application built with JavaScript. Track income, expenses, and view transaction history with visual reports.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- React CRUD -->
+                <div class="project-card reveal reveal-delay-2" data-category="react">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ashithjain/react_CRUD" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>React CRUD Application</h3>
+                        <p>A React-based CRUD (Create, Read, Update, Delete) application demonstrating state management and component-based architecture.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking Table -->
+                <div class="project-card reveal" data-category="react">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ashithjain/Booking_table" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Booking Table</h3>
+                        <p>A table booking and reservation system built with JavaScript. Manage reservations, view availability, and handle customer bookings.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LogusIMS -->
+                <div class="project-card reveal reveal-delay-1" data-category="web">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-boxes-stacked"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ashithjain/LogusIMS" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Logus IMS</h3>
+                        <p>An Inventory Management System website for tracking products, stock levels, and managing business inventory with an intuitive dashboard.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-Commerce Website -->
+                <div class="project-card reveal reveal-delay-2" data-category="web">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ashithjain/E-commerce_website" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>E-Commerce Website</h3>
+                        <p>A full-featured e-commerce platform with product browsing, shopping cart functionality, and checkout flow with responsive design.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio -->
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ashithjain/ashithjain.github.io" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://ashithjain.github.io" target="_blank" rel="noopener noreferrer" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h3>Personal Portfolio</h3>
+                        <p>This portfolio website â€” a modern, dark-themed showcase of skills, projects, and certifications built with vanilla HTML, CSS, and JavaScript.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificates" id="certificates">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Continuous Learning</span>
+                <h2 class="section-title">Certifications</h2>
+                <div class="section-line"></div>
+            </div>
+
+                        <!-- Specializations Accordion Showcase -->
+            <div class="specializations-showcase reveal">
+                <h3 style="text-align: center; margin-bottom: 24px; color: var(--text-secondary); font-weight: 500;">Specializations & Professional Programs</h3>
+                <div class="spec-grid">
+                    
+                    <!-- Spec 1: Meta -->
+                    <div class="spec-card">
+                        <span class="spec-badge">Professional Certificate</span>
+                        <h3>Meta Front-End Developer</h3>
+                        <div class="spec-provider">
+                            <span class="spec-provider-logo"><i class="fab fa-meta"></i></span>
+                            <span class="spec-provider-name">Meta</span>
+                        </div>
+                        <div class="spec-footer">
+                            <a href="https://coursera.org/verify/professional-cert/3XPP5WDDVKBD" class="spec-cert-link" target="_blank" rel="noopener noreferrer">
+                                Verify Program <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <button class="btn-toggle-courses" data-target="meta-courses">
+                                Courses (9) <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="spec-courses-list" id="meta-courses">
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">1. Introduction to Front-End Development</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera C2EWQUT4U235.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/C2EWQUT4U235" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">2. Programming with JavaScript</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera X3PWSLJL4ZY5.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/X3PWSLJL4ZY5" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">3. Version Control</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera KX8X7RYQWCUS.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/KX8X7RYQWCUS" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">4. HTML and CSS in depth</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera C8DPRB4MHR6V.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/C8DPRB4MHR6V" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">5. React Basics</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera KTA86PLW4G4S.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/KTA86PLW4G4S" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">6. Advanced React</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera FJA6U93UX4WG.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/FJA6U93UX4WG" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">7. Principles of UX/UI Design</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera PZE7UDWTJUYJ.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/PZE7UDWTJUYJ" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">8. Front-End Developer Capstone</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera BW5VPNLXT2SE.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/BW5VPNLXT2SE" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">9. Coding Interview Preparation</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera U7W8R42GVURB.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/U7W8R42GVURB" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Spec 2: U of Michigan -->
+                    <div class="spec-card">
+                        <span class="spec-badge">Specialization</span>
+                        <h3>Web Design for Everybody</h3>
+                        <div class="spec-provider">
+                            <span class="spec-provider-logo"><i class="fas fa-university"></i></span>
+                            <span class="spec-provider-name">University of Michigan</span>
+                        </div>
+                        <div class="spec-footer">
+                            <a href="https://coursera.org/verify/specialization/3PPJT6AKD683" class="spec-cert-link" target="_blank" rel="noopener noreferrer">
+                                Verify Program <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <button class="btn-toggle-courses" data-target="michigan-courses">
+                                Courses (5) <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="spec-courses-list" id="michigan-courses">
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">1. Introduction to HTML5</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera 42YDK4C7SDRY.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/42YDK4C7SDRY" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">2. Introduction to CSS3</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera VP4CB2ZLPHB5.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/VP4CB2ZLPHB5" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">3. Interactivity with JavaScript</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera P5KSKTB78ZC5.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/P5KSKTB78ZC5" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">4. Advanced Styling with Responsive Design</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera 86VDZHYZXK2V.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/86VDZHYZXK2V" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">5. Web Design for Everybody Capstone</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera 573VKHS26CNW.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/573VKHS26CNW" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Spec 3: AWS -->
+                    <div class="spec-card">
+                        <span class="spec-badge">Specialization</span>
+                        <h3>AWS Fundamentals</h3>
+                        <div class="spec-provider">
+                            <span class="spec-provider-logo"><i class="fab fa-aws"></i></span>
+                            <span class="spec-provider-name">Amazon Web Services</span>
+                        </div>
+                        <div class="spec-footer">
+                            <a href="https://coursera.org/verify/specialization/AEJ34KOYO6PR" class="spec-cert-link" target="_blank" rel="noopener noreferrer">
+                                Verify Program <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <button class="btn-toggle-courses" data-target="aws-courses">
+                                Courses (3) <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="spec-courses-list" id="aws-courses">
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">1. AWS Cloud Technical Essentials</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera HRNU1C5DPLCD.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/HRNU1C5DPLCD" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">2. Architecting Solutions on AWS</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera KJTBZWTUHOO9.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/KJTBZWTUHOO9" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                            <div class="spec-course-item">
+                                <span class="spec-course-title">3. Migrating to the AWS Cloud</span>
+                                <div class="spec-course-links">
+                                    <a href="certificates/Coursera VLWTFOSWBY4C.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                                    <a href="https://coursera.org/verify/VLWTFOSWBY4C" target="_blank"><i class="fas fa-external-link-alt"></i> Verify</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Provider Filter Tabs -->
+            <div class="project-filters reveal" style="margin-top: 56px; margin-bottom: 32px;">
+                <h3 style="width: 100%; text-align: center; margin-bottom: 20px; color: var(--text-secondary); font-weight: 500;">All Individual Certificates</h3>
+                <button class="filter-btn active" data-cert-filter="all">All (30)</button>
+                <button class="filter-btn" data-cert-filter="meta">Meta (10)</button>
+                <button class="filter-btn" data-cert-filter="michigan">University of Michigan (6)</button>
+                <button class="filter-btn" data-cert-filter="scrimba">Scrimba (9)</button>
+                <button class="filter-btn" data-cert-filter="aws">AWS (4)</button>
+                <button class="filter-btn" data-cert-filter="ibm">IBM (1)</button>
+            </div>
+
+            <!-- Certificates Grid -->
+            <div class="certificates-grid" id="certsGrid">
+                <!-- Certificate card for Web Design for Everybody: Basics of Web Development & Coding -->
+                <div class="cert-card reveal" data-provider="michigan">
+                    <div class="cert-card-top">
+                        <div class="cert-logo michigan">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <span class="cert-issuer">U of Michigan - Coursera</span>
+                    </div>
+                    <h3>Web Design for Everybody: Basics of Web Development & Coding</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/specialization/3PPJT6AKD683" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera 3PPJT6AKD683.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Meta Front-End Developer -->
+                <div class="cert-card reveal" data-provider="meta">
+                    <div class="cert-card-top">
+                        <div class="cert-logo meta">
+                            <i class="fab fa-meta"></i>
+                        </div>
+                        <span class="cert-issuer">Meta - Coursera</span>
+                    </div>
+                    <h3>Meta Front-End Developer</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/professional-cert/3XPP5WDDVKBD" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera 3XPP5WDDVKBD.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Introduction to HTML5 -->
+                <div class="cert-card reveal" data-provider="michigan">
+                    <div class="cert-card-top">
+                        <div class="cert-logo michigan">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <span class="cert-issuer">U of Michigan - Coursera</span>
+                    </div>
+                    <h3>Introduction to HTML5</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/42YDK4C7SDRY" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera 42YDK4C7SDRY.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Introduction to Agile Development and Scrum -->
+                <div class="cert-card reveal" data-provider="ibm">
+                    <div class="cert-card-top">
+                        <div class="cert-logo ibm">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <span class="cert-issuer">IBM - Coursera</span>
+                    </div>
+                    <h3>Introduction to Agile Development and Scrum</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/51SELCEZNYUQ" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera 51SELCEZNYUQ.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Web Design for Everybody Capstone -->
+                <div class="cert-card reveal" data-provider="michigan">
+                    <div class="cert-card-top">
+                        <div class="cert-logo michigan">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <span class="cert-issuer">U of Michigan - Coursera</span>
+                    </div>
+                    <h3>Web Design for Everybody Capstone</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/573VKHS26CNW" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera 573VKHS26CNW.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for React Interview Questions -->
+                <div class="cert-card reveal" data-provider="scrimba">
+                    <div class="cert-card-top">
+                        <div class="cert-logo scrimba">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="cert-issuer">Scrimba</span>
+                    </div>
+                    <h3>React Interview Questions</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/595HDKF369YQ" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera 595HDKF369YQ.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Learn HTML and CSS -->
+                <div class="cert-card reveal" data-provider="scrimba">
+                    <div class="cert-card-top">
+                        <div class="cert-logo scrimba">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="cert-issuer">Scrimba</span>
+                    </div>
+                    <h3>Learn HTML and CSS</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/6R7X8N7PFTRA" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera 6R7X8N7PFTRA.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Advanced Styling with Responsive Design -->
+                <div class="cert-card reveal" data-provider="michigan">
+                    <div class="cert-card-top">
+                        <div class="cert-logo michigan">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <span class="cert-issuer">U of Michigan - Coursera</span>
+                    </div>
+                    <h3>Advanced Styling with Responsive Design</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/86VDZHYZXK2V" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera 86VDZHYZXK2V.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for AWS Fundamentals -->
+                <div class="cert-card reveal" data-provider="aws">
+                    <div class="cert-card-top">
+                        <div class="cert-logo aws">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <span class="cert-issuer">AWS - Coursera</span>
+                    </div>
+                    <h3>AWS Fundamentals</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/specialization/AEJ34KOYO6PR" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera AEJ34KOYO6PR.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Front-End Developer Capstone  -->
+                <div class="cert-card reveal" data-provider="meta">
+                    <div class="cert-card-top">
+                        <div class="cert-logo meta">
+                            <i class="fab fa-meta"></i>
+                        </div>
+                        <span class="cert-issuer">Meta - Coursera</span>
+                    </div>
+                    <h3>Front-End Developer Capstone </h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/BW5VPNLXT2SE" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera BW5VPNLXT2SE.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Introduction to Front-End Development -->
+                <div class="cert-card reveal" data-provider="meta">
+                    <div class="cert-card-top">
+                        <div class="cert-logo meta">
+                            <i class="fab fa-meta"></i>
+                        </div>
+                        <span class="cert-issuer">Meta - Coursera</span>
+                    </div>
+                    <h3>Introduction to Front-End Development</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/C2EWQUT4U235" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera C2EWQUT4U235.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for HTML and CSS in depth -->
+                <div class="cert-card reveal" data-provider="meta">
+                    <div class="cert-card-top">
+                        <div class="cert-logo meta">
+                            <i class="fab fa-meta"></i>
+                        </div>
+                        <span class="cert-issuer">Meta - Coursera</span>
+                    </div>
+                    <h3>HTML and CSS in depth</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/C8DPRB4MHR6V" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera C8DPRB4MHR6V.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for React Technical Interview Practice Questions -->
+                <div class="cert-card reveal" data-provider="scrimba">
+                    <div class="cert-card-top">
+                        <div class="cert-logo scrimba">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="cert-issuer">Scrimba</span>
+                    </div>
+                    <h3>React Technical Interview Practice Questions</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/D0S9KWOYCS61" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera D0S9KWOYCS61.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Learn React Router 6 -->
+                <div class="cert-card reveal" data-provider="scrimba">
+                    <div class="cert-card-top">
+                        <div class="cert-logo scrimba">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="cert-issuer">Scrimba</span>
+                    </div>
+                    <h3>Learn React Router 6</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/D7YSXDZH8RPT" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera D7YSXDZH8RPT.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Advanced React -->
+                <div class="cert-card reveal" data-provider="meta">
+                    <div class="cert-card-top">
+                        <div class="cert-logo meta">
+                            <i class="fab fa-meta"></i>
+                        </div>
+                        <span class="cert-issuer">Meta - Coursera</span>
+                    </div>
+                    <h3>Advanced React</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/FJA6U93UX4WG" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera FJA6U93UX4WG.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Learn CSS Flexbox -->
+                <div class="cert-card reveal" data-provider="scrimba">
+                    <div class="cert-card-top">
+                        <div class="cert-logo scrimba">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="cert-issuer">Scrimba</span>
+                    </div>
+                    <h3>Learn CSS Flexbox</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/GQJ89M54NU9C" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera GQJ89M54NU9C.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Learn Advanced React -->
+                <div class="cert-card reveal" data-provider="scrimba">
+                    <div class="cert-card-top">
+                        <div class="cert-logo scrimba">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="cert-issuer">Scrimba</span>
+                    </div>
+                    <h3>Learn Advanced React</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/HQCI44L5TCKG" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera HQCI44L5TCKG.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for AWS Cloud Technical Essentials -->
+                <div class="cert-card reveal" data-provider="aws">
+                    <div class="cert-card-top">
+                        <div class="cert-logo aws">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <span class="cert-issuer">AWS - Coursera</span>
+                    </div>
+                    <h3>AWS Cloud Technical Essentials</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/HRNU1C5DPLCD" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera HRNU1C5DPLCD.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Learn UI Design Fundamentals -->
+                <div class="cert-card reveal" data-provider="scrimba">
+                    <div class="cert-card-top">
+                        <div class="cert-logo scrimba">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="cert-issuer">Scrimba</span>
+                    </div>
+                    <h3>Learn UI Design Fundamentals</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/KB4NAUFE6JM9" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera KB4NAUFE6JM9.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Architecting Solutions on AWS -->
+                <div class="cert-card reveal" data-provider="aws">
+                    <div class="cert-card-top">
+                        <div class="cert-logo aws">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <span class="cert-issuer">AWS - Coursera</span>
+                    </div>
+                    <h3>Architecting Solutions on AWS</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/KJTBZWTUHOO9" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera KJTBZWTUHOO9.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for React Basics -->
+                <div class="cert-card reveal" data-provider="meta">
+                    <div class="cert-card-top">
+                        <div class="cert-logo meta">
+                            <i class="fab fa-meta"></i>
+                        </div>
+                        <span class="cert-issuer">Meta - Coursera</span>
+                    </div>
+                    <h3>React Basics</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/KTA86PLW4G4S" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera KTA86PLW4G4S.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Version Control -->
+                <div class="cert-card reveal" data-provider="meta">
+                    <div class="cert-card-top">
+                        <div class="cert-logo meta">
+                            <i class="fab fa-meta"></i>
+                        </div>
+                        <span class="cert-issuer">Meta - Coursera</span>
+                    </div>
+                    <h3>Version Control</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/KX8X7RYQWCUS" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera KX8X7RYQWCUS.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Learn JavaScript -->
+                <div class="cert-card reveal" data-provider="scrimba">
+                    <div class="cert-card-top">
+                        <div class="cert-logo scrimba">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="cert-issuer">Scrimba</span>
+                    </div>
+                    <h3>Learn JavaScript</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/MZC3QTASDXUF" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera MZC3QTASDXUF.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Interactivity with JavaScript -->
+                <div class="cert-card reveal" data-provider="michigan">
+                    <div class="cert-card-top">
+                        <div class="cert-logo michigan">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <span class="cert-issuer">U of Michigan - Coursera</span>
+                    </div>
+                    <h3>Interactivity with JavaScript</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/P5KSKTB78ZC5" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera P5KSKTB78ZC5.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Principles of UX/UI Design -->
+                <div class="cert-card reveal" data-provider="meta">
+                    <div class="cert-card-top">
+                        <div class="cert-logo meta">
+                            <i class="fab fa-meta"></i>
+                        </div>
+                        <span class="cert-issuer">Meta - Coursera</span>
+                    </div>
+                    <h3>Principles of UX/UI Design</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/PZE7UDWTJUYJ" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera PZE7UDWTJUYJ.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Async JavaScript -->
+                <div class="cert-card reveal" data-provider="scrimba">
+                    <div class="cert-card-top">
+                        <div class="cert-logo scrimba">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <span class="cert-issuer">Scrimba</span>
+                    </div>
+                    <h3>Async JavaScript</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/ST6TQXM8W227" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera ST6TQXM8W227.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Coding Interview Preparation -->
+                <div class="cert-card reveal" data-provider="meta">
+                    <div class="cert-card-top">
+                        <div class="cert-logo meta">
+                            <i class="fab fa-meta"></i>
+                        </div>
+                        <span class="cert-issuer">Meta - Coursera</span>
+                    </div>
+                    <h3>Coding Interview Preparation</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/U7W8R42GVURB" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera U7W8R42GVURB.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Migrating to the AWS Cloud -->
+                <div class="cert-card reveal" data-provider="aws">
+                    <div class="cert-card-top">
+                        <div class="cert-logo aws">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <span class="cert-issuer">AWS - Coursera</span>
+                    </div>
+                    <h3>Migrating to the AWS Cloud</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/VLWTFOSWBY4C" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera VLWTFOSWBY4C.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Introduction to CSS3 -->
+                <div class="cert-card reveal" data-provider="michigan">
+                    <div class="cert-card-top">
+                        <div class="cert-logo michigan">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <span class="cert-issuer">U of Michigan - Coursera</span>
+                    </div>
+                    <h3>Introduction to CSS3</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/VP4CB2ZLPHB5" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera VP4CB2ZLPHB5.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate card for Programming with JavaScript -->
+                <div class="cert-card reveal" data-provider="meta">
+                    <div class="cert-card-top">
+                        <div class="cert-logo meta">
+                            <i class="fab fa-meta"></i>
+                        </div>
+                        <span class="cert-issuer">Meta - Coursera</span>
+                    </div>
+                    <h3>Programming with JavaScript</h3>
+                    <div class="cert-date">
+                        <i class="far fa-calendar-alt"></i>
+                        <span>Completed 2024</span>
+                    </div>
+                    <div style="display: flex; gap: 12px; align-items: center;">
+                        <a href="https://coursera.org/verify/X3PWSLJL4ZY5" class="cert-link" target="_blank" rel="noopener noreferrer">
+                            Verify <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <span style="color: var(--text-muted); font-size: 0.8rem;">|</span>
+                        <a href="certificates/Coursera X3PWSLJL4ZY5.pdf" class="cert-link" target="_blank">
+                            PDF <i class="fas fa-file-pdf"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+			1
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Get in touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-grid reveal">
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h4>Phone</h4>
+                    <p><a href="tel:+918217577406">+91 8217577406</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h4>Location</h4>
+                    <p>Bangalore, Karnataka<br>India</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4>Email</h4>
+                    <p><a href="mailto:ashithjain97@gmail.com">ashithjain97@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="https://github.com/ashithjain" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/ashith-jain/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:ashithjain97@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p class="footer-text">
+                &copy; 2026 Ashith Jain. Made with <span class="heart">&hearts;</span> in Bangalore
+            </p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-angle-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+    (function () {
+        'use strict';
+
+        // =========== Preloader ===========
+        window.addEventListener('load', function () {
+            const preloader = document.getElementById('preloader');
+            setTimeout(function () {
+                preloader.classList.add('hidden');
+            }, 400);
+        });
+
+        // =========== Navbar Scroll ===========
+        const navbar = document.getElementById('navbar');
+        const backToTop = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', function () {
+            const scrollY = window.scrollY;
+
+            // Navbar background
+            if (scrollY > 80) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            // Back to top
+            if (scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+
+            // Active nav link
+            updateActiveNav();
+        });
+
+        backToTop.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // =========== Mobile Nav Toggle ===========
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        navToggle.addEventListener('click', function () {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('open');
+        });
+
+        // Close mobile nav on link click
+        navLinks.querySelectorAll('a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('open');
+            });
+        });
+
+        // =========== Active Nav Link ===========
+        function updateActiveNav() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinksList = document.querySelectorAll('.nav-links a');
+            let current = '';
+
+            sections.forEach(function (section) {
+                const sectionTop = section.offsetTop - 120;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinksList.forEach(function (link) {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // =========== Smooth Scroll ===========
+        document.querySelectorAll('.scrollto').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const target = document.querySelector(targetId);
+                if (target) {
+                    const offsetTop = target.offsetTop - 70;
+                    window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // =========== Typed Text Effect ===========
+        const typedText = document.getElementById('typed-text');
+        const phrases = [
+            'Building Modern Web Apps',
+            'React & JavaScript Enthusiast',
+            'Turning Ideas into Code',
+            'Clean Code Advocate',
+            'Lifelong Learner'
+        ];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typingSpeed = 80;
+
+        function typeEffect() {
+            const currentPhrase = phrases[phraseIndex];
+
+            if (isDeleting) {
+                typedText.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+                typingSpeed = 40;
+            } else {
+                typedText.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+                typingSpeed = 80;
+            }
+
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                isDeleting = true;
+                typingSpeed = 1500; // Pause at end
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                typingSpeed = 400; // Pause before next
+            }
+
+            setTimeout(typeEffect, typingSpeed);
+        }
+
+        setTimeout(typeEffect, 1000);
+
+        // =========== Particle Effect ===========
+        const particleContainer = document.getElementById('particles');
+        function createParticles() {
+            for (let i = 0; i < 30; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (4 + Math.random() * 4) + 's';
+                particle.style.width = (1 + Math.random() * 3) + 'px';
+                particle.style.height = particle.style.width;
+                particleContainer.appendChild(particle);
+            }
+        }
+        createParticles();
+
+        // =========== Scroll Reveal (Intersection Observer) ===========
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const revealObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(function (el) {
+            revealObserver.observe(el);
+        });
+
+        // =========== Theme Toggle (Dark / Light Mode) ===========
+        const themeToggleBtn = document.getElementById('themeToggle');
+        
+        // Function to set theme
+        function setTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            localStorage.setItem('portfolio-theme', theme);
+        }
+        
+        // Initialize theme from storage or system preference
+        const savedTheme = localStorage.getItem('portfolio-theme');
+        const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        
+        if (savedTheme === 'light' || (!savedTheme && systemPrefersLight)) {
+            setTheme('light');
+        } else {
+            setTheme('dark'); // Default to dark
+        }
+        
+        // Toggle theme on button click
+        themeToggleBtn.addEventListener('click', function () {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            setTheme(newTheme);
+        });
+
+        // =========== Specializations Courses Toggle ===========
+        const toggleButtons = document.querySelectorAll('.btn-toggle-courses');
+        toggleButtons.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                const targetId = btn.dataset.target;
+                const coursesList = document.getElementById(targetId);
+                
+                // Toggle active class on button
+                btn.classList.toggle('active');
+                
+                // Toggle open class on courses list
+                coursesList.classList.toggle('open');
+                
+                // Update icon inside button
+                const icon = btn.querySelector('i');
+                if (coursesList.classList.contains('open')) {
+                    icon.className = 'fas fa-chevron-up';
+                } else {
+                    icon.className = 'fas fa-chevron-down';
+                }
+            });
+        });
+
+        // =========== Interactive Filtering (Projects & Certs) ===========
+        
+        // Project Filter
+        const projectFilterBtns = document.querySelectorAll('[data-filter]');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        projectFilterBtns.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                projectFilterBtns.forEach(function (b) { b.classList.remove('active'); });
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+
+                projectCards.forEach(function (card) {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.classList.remove('filtered-out');
+                        card.style.display = '';
+                    } else {
+                        card.classList.add('filtered-out');
+                        // Delay display:none slightly to let scale animation play
+                        setTimeout(function() {
+                            if(card.classList.contains('filtered-out')) {
+                                card.style.display = 'none';
+                            }
+                        }, 400);
+                    }
+                });
+            });
+        });
+
+        // Certificates Filter
+        const certFilterBtns = document.querySelectorAll('[data-cert-filter]');
+        const certCards = document.querySelectorAll('.cert-card');
+
+        certFilterBtns.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                certFilterBtns.forEach(function (b) { b.classList.remove('active'); });
+                btn.classList.add('active');
+
+                const filter = btn.dataset.certFilter;
+
+                certCards.forEach(function (card) {
+                    if (filter === 'all' || card.dataset.provider === filter) {
+                        card.classList.remove('filtered-out');
+                        card.style.display = '';
+                    } else {
+                        card.classList.add('filtered-out');
+                        setTimeout(function() {
+                            if(card.classList.contains('filtered-out')) {
+                                card.style.display = 'none';
+                            }
+                        }, 400);
+                    }
+                });
+            });
+        });
+
+    })();
+    </script>
+
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+    <!-- Google Analytics (your existing tag) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166628497-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-166628497-2');
+    </script>
+
+</body>
+
+</html>

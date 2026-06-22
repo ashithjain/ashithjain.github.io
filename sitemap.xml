@@ -1,9 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://ashithjain.github.io/</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
+<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:fo="http://www.w3.org/1999/XSL/Format"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://ashithjain.github.io/</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/resume.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/computer-accessories-website/</loc>
+  <lastmod>2025-04-22T14:50:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20C2EWQUT4U235.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20X3PWSLJL4ZY5.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20KX8X7RYQWCUS.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20C8DPRB4MHR6V.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20KTA86PLW4G4S.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20FJA6U93UX4WG.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20PZE7UDWTJUYJ.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20BW5VPNLXT2SE.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20U7W8R42GVURB.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%2042YDK4C7SDRY.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20VP4CB2ZLPHB5.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20P5KSKTB78ZC5.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%2086VDZHYZXK2V.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20573VKHS26CNW.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20HRNU1C5DPLCD.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20KJTBZWTUHOO9.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20VLWTFOSWBY4C.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%203PPJT6AKD683.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%203XPP5WDDVKBD.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%2051SELCEZNYUQ.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20595HDKF369YQ.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%206R7X8N7PFTRA.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20AEJ34KOYO6PR.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20D0S9KWOYCS61.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20D7YSXDZH8RPT.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20GQJ89M54NU9C.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20HQCI44L5TCKG.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20KB4NAUFE6JM9.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20MZC3QTASDXUF.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/req/docs/certificates/Coursera%20ST6TQXM8W227.pdf</loc>
+  <lastmod>2026-06-17T14:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ashithjain.github.io/computer-accessories-website/admin/login.html</loc>
+  <lastmod>2025-04-22T14:50:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
 </urlset>
